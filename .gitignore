@@ -1,2 +1,3 @@
-ad-starter-theme/node_modules
-ad-starter-theme/.wp-env.json
+node_modules
+.wp-env.json
+pnpm-lock.yaml
