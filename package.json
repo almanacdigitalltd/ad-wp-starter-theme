@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "env": "wp-env",
+    "dev": "vite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@wordpress/env": "^5.16.0"
+    "@wordpress/env": "^5.16.0",
+    "vite": "^4.3.1"
   }
 }
