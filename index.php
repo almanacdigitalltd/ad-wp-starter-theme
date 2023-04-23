@@ -9,6 +9,9 @@
     <?php wp_head(); ?>
 </head>
 <body>
+
+    <h1>Almanac Starter Theme</h1>
+    <h2>Hello World</h2>
     
     <?php wp_footer(); ?>
 </body>

@@ -1,0 +1,152 @@
+.container {
+    position: relative;
+    width: 100%;
+  
+    .container__inner {
+      max-width: $site-width;
+      margin: 0 auto;
+      padding-left: $grid-gap;
+      padding-right: $grid-gap;
+  
+      @include medium {
+        padding-left: $grid-gap-tablet*1.5;
+        padding-right: $grid-gap-tablet*1.5;
+      }
+      
+      @include large {
+        padding-left: $grid-gap-desktop*2.5;
+        padding-right: $grid-gap-desktop*2.5;
+      }
+    }
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat($grid-columns, 1fr);
+    grid-column-gap: $grid-gap;
+    // grid-row-gap: $grid-gap;
+    
+    // CUSTOM SETTINGS - NEEDS OWN CLASS - grid-auto-rows
+    grid-template-rows: min-content auto;
+  
+    @include medium {
+      grid-column-gap: $grid-gap-tablet;
+    }
+    
+    @include large {
+      grid-column-gap: $grid-gap-desktop;
+    }
+  }
+  
+  .rows-mobile {
+    grid-row-gap: $grid-gap;
+  
+    @include large {
+      grid-row-gap: 0;
+    }
+  }
+  
+  .rows {
+    grid-row-gap: $grid-gap;
+  }
+  
+  .col-align-end {
+    justify-self: end;
+  }
+  
+  .no-gutters {
+    grid-column-gap: 0;
+  }
+  
+  @for $i from 1 through $grid-columns {
+  
+    .col-#{$i} {
+      grid-column: span $i / span $i;
+    }
+  
+    .row-#{$i} {
+  
+    }
+  }
+  
+  @include small {
+    @for $i from 1 through $grid-columns {
+  
+      .col-sm-#{$i} {
+        grid-column: span $i / span $i;
+      }
+  
+      .order-sm-#{$i} {
+        order: $i;
+      }
+    }
+  
+    @for $i from 1 through $grid-columns {
+  
+      .col-sm-start-#{$i} {
+        grid-column-start: $i;
+      }
+    }
+  }
+  
+  // -----------------------------
+  //     Grid Medium Breakpoint
+  // -----------------------------
+  
+  @include medium {
+    @for $i from 1 through $grid-columns {
+  
+      .col-md-#{$i} {
+        grid-column: span $i / span $i;
+      }
+  
+      .order-md-#{$i} {
+        order: $i;
+      }
+    }
+  
+    @for $i from 1 through $grid-columns {
+  
+      .col-md-start-#{$i} {
+        grid-column-start: $i;
+      }
+    }
+  }
+  
+  // -----------------------------
+  //     Grid Large Breakpoint
+  // -----------------------------
+  
+  @include large {
+    @for $i from 1 through $grid-columns {
+  
+      .col-lg-#{$i} {
+        grid-column: span $i / span $i;
+      }
+  
+      .order-lg-#{$i} {
+        order: $i;
+      }
+    }
+  
+    @for $i from 1 through $grid-columns {
+  
+      .col-lg-start-#{$i} {
+        grid-column-start: $i;
+      }
+      
+    }
+  
+    .col-align-end {
+      justify-self: end;
+    }
+  
+    .row-lg-2 {
+      grid-row: 1 / 3;
+    }
+  
+    .row-lg-4 {
+      grid-row: 3 / 5;
+    }
+  }
+  

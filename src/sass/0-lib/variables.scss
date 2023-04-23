@@ -1,0 +1,62 @@
+$asset-path: '/wp-content/themes/quickgrind/assets/src';
+$image-path: '/wp-content/themes/quickgrind/assets/src/img';
+
+$header-height: 147px;
+$header-height-mobile: 82px;
+
+$font-primary: 'Poppins', sans-serif;
+$font-secondary: 'Lato', sans-serif;
+
+$font-size-base: 62.5%;
+
+$normal: 300;
+$bold: 400;
+$bolder: 500;
+
+$site-width: 1440px;
+
+// BREAKPOINTS
+$break-mobile: 480px;
+$break-tablet: 768px;
+$break-desktop: 1280px;
+
+$grid-gap: 16px;
+$grid-gap-tablet: 24px;
+$grid-gap-desktop: 50px;
+
+$grid-columns: 12;
+
+$white: #fff;
+$black: #000;
+
+// Base Colours
+// Primaries
+$color-primary: #33ADF5;
+$color-primary-dark: #007AC2;
+$color-border: #1E90FF;
+
+
+$color-secondary: #364866;
+$color-tertiary: #5540FB;
+
+// Greys
+$color-grey-100: #F3F5F8;
+$color-grey-200: #B5BEC7;
+$color-grey-300: #68717A;
+$color-grey-400: #2A2A2D;
+
+// Nav Grey
+$nav-grey: #222222;
+
+// System
+$system-success: #18A957;
+$system-warning: #FFBB38;
+$system-error: #DF1642;
+$system-info: $color-primary;
+
+// Card
+$card-content-padding: 24px;
+
+$z-index: (
+    navigation-mega-menu: 100,
+);
